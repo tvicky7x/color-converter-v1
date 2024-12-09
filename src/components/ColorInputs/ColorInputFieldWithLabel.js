@@ -11,7 +11,7 @@ function ColorInputFieldWithLabel({
     <div
       className={`col-span-3 flex flex-col gap-y-[20px] relative ${className} `}
     >
-      <h2 className="font-medium text-xl capitalize">{label}</h2>
+      <label className="font-medium text-xl capitalize">{label}</label>
       <div className="relative">
         <div className="absolute top-1/2 -translate-y-1/2 left-[12px] aspect-square w-[30px] rounded-full bg-black border-[0.5px] border-white/50 " />
         <input

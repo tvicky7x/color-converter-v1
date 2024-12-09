@@ -1,6 +1,7 @@
 import React from "react";
 import ColorInputs from "../components/ColorInputs/ColorInputs";
 import ComplementaryColors from "../components/ComplementaryColors/ComplementaryColors";
+import ColorAdjustments from "../components/ColorAdjustments/ColorAdjustments";
 
 function ColorConverterPage() {
   return (
@@ -13,13 +14,13 @@ function ColorConverterPage() {
           </p>
         </div>
         <div className="grid grid-flow-col grid-cols-12 gap-x-[15px] mt-[94px] ">
-          <div className="col-span-7">
-            <div className="flex flex-col gap-y-[93px]">
-              <ColorInputs />
-              <ComplementaryColors />
-            </div>
+          <div className="col-span-7 grid grid-flow-row h-full content-between ">
+            <ColorInputs />
+            <ComplementaryColors />
           </div>
-          <div className="col-span-4 col-start-9">test</div>
+          <div className="col-span-4 col-start-9">
+            <ColorAdjustments />
+          </div>
         </div>
       </div>
     </div>
